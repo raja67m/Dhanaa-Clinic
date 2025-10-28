@@ -45,6 +45,7 @@ width: 100%;
     margin: 5px;
     font-weight: bold;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 /* nav bar logo design started */
