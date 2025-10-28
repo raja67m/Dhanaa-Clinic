@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 :root{
---headingColor:#003d99;  
+--headingColor:#1a75ff;  
 --navColor:#1a75ff;
 --backgroundColor:#e6f0ff;
 --btnColor:	 #0052cc;
@@ -39,7 +39,6 @@ height:auto;
   position:fixed;
   justify-content: space-between;
   overflow: hidden;
- 
 }
 /* logo desing start */
 

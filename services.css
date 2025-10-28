@@ -7,5 +7,42 @@ body{
 }
 /* section service page start */
 section .serviceBody{
-padding-top: 50px;
+padding-top: 130px;
+text-align: center;
+}
+section .serviceBody h1{
+    color: var(--headingColor);
+      font-family:"Poppins";
+      font-size: 20px;
+}
+section .serviceBody p{
+    font-size: 16px;
+    color: rgb(77, 75, 75); 
+    font-family:"Poppins";
+}
+section .serviceBody .serviceGrid{
+ display: grid;
+  grid-template-columns:repeat(4,1fr);
+gap: 15px;
+    padding: 5px;
+    margin: 15px;
+}
+section .serviceBody .serviceGrid .services{
+    border: 1px solid var(--borderGray);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+ align-items: start;
+}
+.serviceGrid .services i{
+    color:var(--headingColor) ;
+    font-size: 20px;
+    padding: 15px 15px 10px 15px;
+    background-color:#cce0ff;
+    border-radius: 10px;
+}
+.serviceGrid .services span{
+    color: gray;
+    
 }
