@@ -34,6 +34,15 @@ section .serviceBody .serviceGrid .services{
     display: flex;
     flex-direction: column;
  align-items: start;
+ background-color: white;
+}
+section .serviceBody .serviceGrid .services:hover{
+    box-shadow:  0px 0px 7px #aaaaaa,
+             -25px 0px 30px #eeeded;
+               -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;  
 }
 .serviceGrid .services i{
     color:var(--headingColor) ;
@@ -43,6 +52,11 @@ section .serviceBody .serviceGrid .services{
     border-radius: 10px;
 }
 .serviceGrid .services span{
+      font-family:"Poppins";
+        margin-top: 19px;
+}
+.serviceGrid .services p{
     color: gray;
-    
+    font-size: 14px;
+    text-align: start;
 }
