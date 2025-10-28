@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 :root{
 --headingColor:#003d99;  
 --navColor:#1a75ff;
 --backgroundColor:#e6f0ff;
 --btnColor:	 #0052cc;
+--borderGray:rgb(224, 222, 222);
+--btnBgColor:#0073e6;
 }
 *{
     margin: 0px;
@@ -85,8 +88,73 @@ width: 100%;
     font-size: 17px;
     
 }
+/* body section is start */
+.bodyContainer{
+  display: flex;
+  flex-direction: row;
+   padding: 10px;
+}
+.bodyContainer .firstRow{
+  margin-top:17%;
+  font-family:"Poppins";
+  color: var(--headingColor);
+}
+.bodyContainer .firstRow p{
+  font-size: 15px;
+  text-align: start;
+  margin-top: 10px;
+}
+.bodyContainer .firstRow .bookApp{
+  margin-top: 20px;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+    font-family:"Poppins";
+  background-color: var(--btnColor);
+  cursor: pointer;
+}
+.bodyContainer .firstRow .bookApp:hover{
+  background-color:var(--btnBgColor);
+  
+}
+.bodyContainer .firstRow .services{
+   padding: 13px 20px;
+  border:1px solid var(--borderGray);
+  border-radius: 6px;
+  color: black;
+  font-weight: 500;
+    font-family:"Poppins";
+  background-color:white;
+  cursor: pointer; 
+}
+.bodyContainer .firstRow .services:hover{
+  background-color:var(--borderGray);
+}
+.bodyContainer .firstRow .aboutDes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.bodyContainer .firstRow .aboutDes>div{
+  border: 1px solid var(--borderGray);
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+   box-shadow:  0px 0px 7px #aaaaaa,
+             -20px 0px 27px #eeeded;
+             
+}
+.bodyContainer .firstRow .aboutDes p{
+  color:rgb(91, 89, 89);
+ 
+}
 
-
-
-
-/* home section is start */
+/* slider container  star*/
+.bodyContainer .slider{
+  margin-top: 120px;
+}
