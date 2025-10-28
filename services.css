@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--servicePageBg) !important;
+}
+/* section service page start */
+section .serviceBody{
+padding-top: 50px;
+}
