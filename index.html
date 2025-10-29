@@ -20,14 +20,14 @@
     <nav>
              <ul class="topNav" >
                         <li> <a  href="./services.html" >Service</a></li>
-                        <li> <a href="./" >Docters</a></li>
-                        <li> <a href="./Special Offers.html" >Book Appointments</a></li>
+                        <li> <a href="./doctors.html" >Docters</a></li>
+                        <li> <a href="./bookAppointments.html" >Book Appointments</a></li>
                         
                         <li> <a href="./contact.html" >Contact</a></li>
              </ul>
              
 
-              <button>Get started</button>
+              <button onclick="bookAppointment()">Get started</button>
 
              
               <i class="fi fi-br-menu-burger" onclick="resNavBar()"></i>
@@ -44,8 +44,8 @@
                 <h1>Welcome to Dhanaa Clinic</h1>
                 <p>Your health is our priority. We provide comprehensive healthcare services with experienced doctors and modern facilities. Book your appointment today and experience quality care.</p>
                 <div>
-                    <button class="bookApp">Book Appointments</button>
-                    <button class="services">Our Services</button>
+                    <button class="bookApp" onclick="bookAppointment()">Book Appointments</button>
+                    <button class="services" onclick="servicePage()">Our Services</button>
                 </div>
                 <div class="aboutDes">
                     <div>
@@ -75,6 +75,14 @@
                             </div>
                     </div>
      </section>
-
+<script>
+  
+bookAppointment=()=>{
+   window.location="./bookAppointments.html";
+}  
+servicePage=()=>{
+    window.location="./services.html";
+}
+</script>
 </body>
 </html>

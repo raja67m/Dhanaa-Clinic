@@ -21,6 +21,7 @@ body{
 a{
 text-decoration: none !important;
 position:relative;
+list-style-type: none !important;
 }
 .header{
  display: flex;
