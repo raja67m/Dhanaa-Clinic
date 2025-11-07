@@ -1,5 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -13,6 +14,7 @@ padding-top: 130px;
 text-align: center;
 }
 section .serviceBody h1{
+
     color: var(--headingColor);
       font-family:"Poppins";
       font-size: 20px;
