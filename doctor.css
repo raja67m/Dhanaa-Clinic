@@ -31,9 +31,13 @@ section .doctorContainer .doctorGrid .cardView{
         border: 1px solid var(--borderGray);
         border-radius: 10px;
  background-color: white;
-    width: 120%;
-    height: 80%;
-       object-fit: cover;
+    width: 110%;
+    height: 65%;
+  object-fit: cover;
+          display: flex;
+    flex-direction: column;
+   
+    
 }
 section  .doctorContainer .doctorGrid .cardView:hover{
     box-shadow:  0px 0px 7px #aaaaaa,
@@ -45,17 +49,43 @@ section  .doctorContainer .doctorGrid .cardView:hover{
 }
 section .doctorContainer .doctorGrid .cardView img{
     width: 100%;
-    height:50%;
- 
+    height:58%;
     border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        display: flex;
-        flex-direction: column;
+    border-top-right-radius: 10px;
+      
 }
-section .doctorContainer .doctorGrid .cardView span{
+section .doctorContainer .doctorGrid .cardView .content{
+    text-align: start;
+    padding:20px;
+}
+section .doctorContainer .doctorGrid .cardView .content span{
      font-family:"Poppins";
      color: black;
-     padding: 10px;
+    margin-top: 20px;
      font-weight: 500;
- 
+     text-align: start;
+}
+
+section .doctorContainer .doctorGrid .cardView .content .type{
+    font-size:14px;
+    margin-bottom: 10px;
+    color: gray;
+}
+section .doctorContainer .doctorGrid .cardView .content p{
+color: black;
+}
+section .doctorContainer .doctorGrid .catgoroy{
+   display: flex;
+   flex-direction: row; 
+
+}
+section .doctorContainer .doctorGrid .catgoroy p{
+   font-size: 12px;
+   color: black;
+   margin: 5px;
+   margin-top: 10px;
+  background-color: rgb(238, 237, 237);
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 9px;
 }
