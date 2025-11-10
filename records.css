@@ -1,6 +1,7 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -184,4 +185,64 @@ gap: 15px;
 .healthContainer .healthGrid .healthTips p{
 padding: 10px 10px 20px 10px;
   color: rgb(54, 52, 52);
+}
+/* feed back form start */
+section .PatientRecordContainer .feedback{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border: 1px solid rgb(226, 222, 222);
+  border-radius: 9px;
+  padding: 20px;
+}
+section .PatientRecordContainer .feedback span{
+  color: black;
+   font-family:"Poppins";
+   text-align: start;
+   font-weight: 500;
+}
+section .PatientRecordContainer .feedback .field{
+display: flex;
+flex-direction:row;
+}
+section .PatientRecordContainer .feedback .field>div{
+  display:flex;
+  flex-direction: column;
+}
+label{
+    font-weight: 550;
+    font-size: 13px;
+   margin-left: 5px;
+   margin-top: 20px;
+    font-family:"Poppins";
+    text-align: start;
+}
+section .PatientRecordContainer .feedback .field input{
+    padding: 13px 75px;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+section .PatientRecordContainer .feedback .field input:focus{
+      border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+    outline: none;
+}
+section .PatientRecordContainer .feedback .rating{
+margin-right: 75%;
+}
+section .PatientRecordContainer .feedback .rating i{
+font-size: 30px;
+cursor: pointer;
+text-align: start;
+color: gray;
+
+}
+section .PatientRecordContainer .feedback .rating i:hover{
+color:rgb(251, 211, 12);
 }
