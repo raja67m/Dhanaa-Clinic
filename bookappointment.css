@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--servicePageBg) !important;
+}
+section .appointmentContainer{
+padding-top: 130px;
+text-align: center;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+}
+section .appointmentContainer h1{
+color: var(--headingColor);
+      font-family:"Poppins";
+      font-size: 20px;
+}
+
+section .appointmentContainer p{
+    font-size: 14px;
+    color: rgb(62, 61, 61); 
+    font-family:"Poppins";
+      text-align: start;
+}
+
+/* contact form start */
+.appointmentForm{
+  padding: 19px;
+  border: 2px solid gray; 
+  margin: 10px; 
+    border: 1px solid rgb(220, 219, 219);
+    border-radius: 10px;
+     font-family:"Poppins";
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+}
+section .appointmentContainer .appointmentForm span{
+    color: black;
+   font-family:"Poppins";
+   text-align: start;
+   font-weight: 500;
+}
+.appointmentForm .messageCon{
+    display: flex;
+    flex-direction: row;
+    
+}
+.appointmentForm .messageCon label{
+    font-weight: 550;
+    font-size: 13px;
+   margin-left: 5px;
+   margin-top: 20px;
+}
+.appointmentForm .messageCon input,select{
+    padding: 13px 75px;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.appointmentForm .messageCon input:focus,select:focus{
+    border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+    outline: none;
+}
+.appointmentForm .messageCon .firstRow{
+display: flex;
+flex-direction: column;
+text-align: start;
+
+}
+.appointmentForm .messageCon .secrow{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.appointmentForm #time{
+font-weight: 550;
+    font-size: 13px;
+    margin-top: 30px;
+   margin-right: 84%;
+}
+.appointmentForm select{
+  padding: 13px 38%;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;   
+}
+.appointmentForm input{
+  padding: 30px 36%;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;   
+}
+.appointmentForm input:focus{
+  border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+    outline: none;   
+}
+
+
+.appointmentForm .sendMessage{
+    background-color: var(--btnColor);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+    transition:  0.3s ease ;
+    margin-top: 10px;
+}
+.appointmentForm .sendMessage:hover{
+   background-color: rgb(22, 38, 110); 
+}
+
+/* book appointment is closed */

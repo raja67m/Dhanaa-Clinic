@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhanaa-Clinic</title>
      <link rel="styleSheet" href="./index.css">
-    
+         <link rel="styleSheet" href="./bookappointment.css">
 
 </head>
 <body>
@@ -37,6 +37,67 @@
             
      </nav>
 </header>
-    
+        <!-- section start  -->
+<section>
+            
+    <div class="appointmentContainer">
+        <h1>Book an Appointment</h1>
+        <p>Schedule your visit with our healthcare professionals. Fill out the form below and we'll confirm your appointment.</p>
+   
+        <!-- appointment book start -->
+         <form class="appointmentForm" id="form">
+            <span>Appointment Details</span>
+                <p>Please provide your information to book an appointment</p>
+                    <div class="messageCon">
+                        <div class="firstRow">
+                            <label>Full Name*</label>
+                            <input type="text" name="fullname" id="fullName" placeholder="Enter your full Name">
+                            <label>Phone*</label>
+                            <input type="text" name="phone" id="phoneNum" placeholder="Enter your phone number">
+                              <label>Preferred Doctor*</label>
+                              <select required>
+                                <option >Others</option>
+                                 <option >Dr.Priya Sharma</option>
+                                 <option >Dr.Rajesh Kumar</option>
+                                 <option >Dr.Anil Verma</option>
+                               
+                            </select>
+                        </div>
+                        <div class="secrow">
+                            <label>Email Address*</label>
+                            <input type="email" name="email" id="emailID" placeholder="Enter your email address">
+
+                            <label>Department*</label>
+                            <select required>
+                                <option >Others</option>
+                                 <option >Cardiology</option>
+                                 <option >Pediatrics</option>
+                                 <option >Ophthalmology</option>
+                                <option>General Medicine</option>
+                            </select>
+                            <label>Preferred Date*</label>
+                            <input type="date" name="date" required>
+                        </div>
+                    </div> 
+                                <label id="time">Preferred Time*</label>
+                               <select required>
+                                <option >9.00 AM - 10.00AM</option>
+                                 <option >10.00 AM - 11.00 AM</option>
+                                 <option >12.00 AM - 1.00 PM</option>
+                                 <option >2.00 PM - 3.00 PM</option>
+                                <option>4.00 PM - 5.00 PM</option>
+                                <option>5.00 PM - 6.00 PM</option>
+                            </select>
+                                <label id="time">Reason For Visit</label>
+                                <input type="text" name="message" placeholder="Please decribe your syomtoms or Reason for visit.">
+                                  
+                                
+                                      
+                                      <button type="submit" class="sendMessage"><i class="fi fi-rs-paper-plane"></i>send Message</button>
+                           
+            </form>
+            <!-- appointment book end -->
+    </div>
+</section>
 </body>
 </html>
