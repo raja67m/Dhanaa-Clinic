@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhanaa-Clinic</title>
      <link rel="styleSheet" href="./index.css">
-    
+     <link rel="styleSheet" href="./records.css">
 
 </head>
 <body>
@@ -23,8 +23,8 @@
                         <li> <a href="./services.html" >Service</a></li>
                         <li> <a href="./doctors.html"  >Docters</a></li>
                         <li> <a href="./bookAppointments.html"  >Book Appointments</a></li>
-                        <li> <a href="./records.html" >Records</a></li>
-                        <li> <a href="./contact.html" class="active" >Contact</a></li>
+                        <li> <a href="./records.html" class="active" >Records</a></li>
+                        <li> <a href="./contact.html"  >Contact</a></li>
              </ul>
              
 
@@ -37,6 +37,26 @@
             
      </nav>
 </header>
+<!-- section start -->
+ <section>
+         <div class="PatientRecordContainer">
+        <h1>Patient Records</h1>
+        <p>Access your medical records securely. Enter your patient ID to view your appointment history and medical records.</p>
+            
+        <!-- patient Record search start -->
+         <div class="recordSearch">
+            <p>Search Patient Records</p>
+            <span>Enter your patient ID to access your medical records</span>
+            <div class="searchBarContainer">
+                <input type="text" placeholder="Enter Patient ID (e.g., PT001)" required>
+                <button type="submit">Search</button>
+            </div>
+         </div>
+         <!-- patient Record search end -->
+          <!-- medical record table start -->
+           <!-- medical record table end -->
+    </div>
+ </section>
     
 </body>
 </html>
