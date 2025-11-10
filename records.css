@@ -77,3 +77,69 @@ section .recordSearch .searchBarContainer button{
 section .recordSearch .searchBarContainer button:hover{
 background-color: rgb(27, 27, 206);
 }
+/* record table start */
+section .recordTableContainer{
+  background-color: white;
+  padding: 25px; 
+  margin-top: 30px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    width: 70%;
+  border: 1px solid var(--borderGray);
+  border-radius: 9px;
+  text-align: start;
+}
+section .recordTableContainer p{
+   color: black;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 550;   
+}
+section .recordTableContainer span{
+color: gray;
+text-transform: capitalize;
+font-size: 14px;
+font-family:"Poppins";
+letter-spacing: 1px;  
+}
+section .recordTableContainer table{
+width:max-content;
+   border-collapse: collapse;
+   margin-top: 20px;
+    
+}
+ /* thead{
+ font-weight: 400;
+  font-family:monospace;
+   align-items: center;
+      border-bottom: 1px solid rgb(196, 194, 194);
+} */
+tbody{
+   align-items:center;
+   text-align: center;
+}
+th,td{
+   margin: 5px;
+   padding: 15px 30px;
+  border-bottom: 1px solid rgb(196, 194, 194);
+   align-items: center;
+   font-family:"Poppins";
+   font-weight: 500;
+   font-size: 15px;
+}
+tbody td{
+  font-size: 14px;
+   font-family:monospace;
+   font-weight: 200;
+   cursor: pointer;
+    border-bottom: 1px solid rgb(196, 194, 194);
+}
+tbody td p{
+    color: white !important;
+    background-color:black;
+     font-family:"Poppins";
+   padding: 5px;
+   border-radius: 6px;
+   font-size: 13px !important;
+}
