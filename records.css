@@ -1,3 +1,6 @@
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-chubby/css/uicons-regular-chubby.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -89,6 +92,7 @@ section .recordTableContainer{
   border: 1px solid var(--borderGray);
   border-radius: 9px;
   text-align: start;
+   margin-bottom: 50px;  
 }
 section .recordTableContainer p{
    color: black;
@@ -107,14 +111,9 @@ section .recordTableContainer table{
 width:max-content;
    border-collapse: collapse;
    margin-top: 20px;
-    
+  
 }
- /* thead{
- font-weight: 400;
-  font-family:monospace;
-   align-items: center;
-      border-bottom: 1px solid rgb(196, 194, 194);
-} */
+
 tbody{
    align-items:center;
    text-align: center;
@@ -142,4 +141,47 @@ tbody td p{
    padding: 5px;
    border-radius: 6px;
    font-size: 13px !important;
+}
+/* health tips container start */
+.healthContainer .healthGrid{
+   display: grid;
+  grid-template-columns:repeat(3,1fr);
+gap: 15px;
+    padding: 35px;
+    margin: 20px;
+}
+.healthContainer .healthGrid .healthTips{
+   border: 1px solid var(--borderGray);
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+ align-items:center;
+ background-color: white;
+}
+.healthContainer .healthGrid .healthTips:hover{
+    box-shadow:  0px 0px 7px #aaaaaa,
+             -25px 0px 30px #eeeded;
+               -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; 
+}
+.healthContainer .healthGrid .healthTips i{
+  font-size: 60px;
+  padding: 60px 172px;
+  background-color: rgb(223, 244, 246);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(35, 122, 244);
+}
+.healthContainer .healthGrid .healthTips span{
+  color: black;
+  font-family:"Poppins";
+  padding: 20px;
+    
+}
+.healthContainer .healthGrid .healthTips p{
+padding: 10px 10px 20px 10px;
+  color: rgb(54, 52, 52);
 }
