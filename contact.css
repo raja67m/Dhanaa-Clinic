@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--servicePageBg) !important;
+}
+section .contactContainer{
+padding-top: 130px;
+text-align: center;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+}
+section .contactContainer h1{
+color: var(--headingColor);
+      font-family:"Poppins";
+      font-size: 20px;
+}
+section .contactContainer p{
+    font-size: 14px;
+    color: rgb(62, 61, 61); 
+    font-family:"Poppins";
+   
+}
+section .contactContainer .contactGrid{
+ display: grid;
+  grid-template-columns:repeat(4,1fr);
+gap: 15px;
+    padding: 5px;
+    margin: 15px;
+}
+section .contactContainer .contactGrid .address{
+    border: 1px solid var(--borderGray);
+    padding: 30px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+ align-items: start;
+ background-color: white;
+}
+section .contactContainer .contactGrid .address:hover{
+    box-shadow:  0px 0px 7px #aaaaaa,
+             -25px 0px 30px #eeeded;
+               -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;  
+}
+.contactGrid .address i{
+    color:var(--headingColor) ;
+    font-size: 20px;
+    padding: 15px 15px 10px 15px;
+    background-color:#cce0ff;
+    border-radius: 10px;
+}
+.contactGrid .address span{
+      font-family:"Poppins";
+        margin-top: 10px;
+        margin-bottom: 7px;
+}
+.contactGrid .address p{
+    color: rgb(54, 53, 53);
+    font-size: 14px;
+    text-align: start;
+    margin:2px;
+}
