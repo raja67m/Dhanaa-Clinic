@@ -259,7 +259,7 @@ section .PatientRecordContainer .feedback .service input{
 margin: 25px 16px 25px 25px;
 }
 #feedFeild{
-  padding: 20px 35%;
+  padding: 30px 35%;
       margin: 0px 20px 0px 0px;
       border: 1px solid rgb(239, 237, 237);
       border-radius: 9px;
@@ -267,7 +267,7 @@ margin: 25px 16px 25px 25px;
       font-size: 13px;
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-#feedFeild:hover{
+#feedFeild:focus{
   border-color: #c2c3c4; 
   box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
   outline: none; 
