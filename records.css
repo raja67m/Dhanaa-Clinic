@@ -235,6 +235,7 @@ section .PatientRecordContainer .feedback .field input:focus{
 }
 section .PatientRecordContainer .feedback .rating{
 margin-right: 75%;
+margin-top: 5px;
 }
 section .PatientRecordContainer .feedback .rating i{
 font-size: 30px;
@@ -246,3 +247,42 @@ color: gray;
 section .PatientRecordContainer .feedback .rating i:hover{
 color:rgb(251, 211, 12);
 }
+section .PatientRecordContainer #type{
+ margin-right: 83%; 
+ margin-top: 24px;
+}
+section .PatientRecordContainer .feedback .service{
+display: flex;
+flex-direction: row;
+}
+section .PatientRecordContainer .feedback .service input{
+margin: 25px 16px 25px 25px;
+}
+#feedFeild{
+  padding: 20px 35%;
+      margin: 0px 20px 0px 0px;
+      border: 1px solid rgb(239, 237, 237);
+      border-radius: 9px;
+      background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#feedFeild:hover{
+  border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+  outline: none; 
+}
+.feedBack{
+     border: none;
+    border-radius: 7px;
+    background-color: var(--btnColor);
+    color: white;
+    padding: 13px 39%;
+    cursor: pointer;
+     font-family:"Poppins";
+     margin-top: 13px;
+     margin-right: 23px;
+}
+.feedBack:hover{
+background-color: rgb(27, 27, 206);
+} 
