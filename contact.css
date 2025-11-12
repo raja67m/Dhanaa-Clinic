@@ -1,3 +1,4 @@
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -65,4 +66,54 @@ section .contactContainer .contactGrid .address:hover{
     font-size: 14px;
     text-align: start;
     margin:2px;
+}
+/* news letter design started */
+section .newsLetterContainer .newsLetter{
+ background-color: white;
+  padding: 25px 70%; 
+  margin-top: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    width: 70%;
+  border: 1px solid var(--borderGray);
+  border-radius: 9px;
+  text-align: start;
+}
+section .newsLetterContainer .newsLetter p{
+    color: black;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 550;
+}
+section .newsLetterContainer .newsLetter span{
+    color: gray;
+    text-transform: capitalize;
+    font-size: 14px;
+   font-family:"Poppins";
+   letter-spacing: 1px;
+}
+section .newsLetterContainer .newsLetter input{
+padding: 10px 36%;
+border: 1px solid rgb(243, 239, 239);
+border-radius: 9px;
+background-color: rgb(243, 241, 241);
+      font-size: 13px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+section .newsLetterContainer .newsLetter input:focus{
+      border-color: #c2c3c4; 
+  box-shadow: 0 0 5px rgba(229, 230, 230, 0.5);
+    outline: none;
+}
+section .newsLetterContainer .newsLetter button{
+    border: none;
+    border-radius: 7px;
+    background-color: var(--btnColor);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+section .newsLetterContainer .newsLetter button:hover{
+background-color: rgb(27, 27, 206);
 }
