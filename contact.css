@@ -2,6 +2,7 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -140,46 +141,48 @@ background-color: rgb(27, 27, 206);
 /* footer design stared */
 footer{
     background-color:#000d1a;
-    padding: 50px;
+   padding: 20px;
     display: flex;
     flex-direction: column;
     color: white;
+    width: 100%;
+    height: auto;
 }
 footer .ContactDetails{
     display: flex;
     flex-direction: row;
 }
-footer .ContactDetails .AmVegLogo{
-width: 40%;
-}
-footer .ContactDetails .AmVegLogo>div{
-    display:inline-flex;
-}
-footer .ContactDetails .AmVegLogo i{
-    background-color: rgb(4, 162, 4);
-    padding: 10px 14px;
-    border-radius: 7px;
-}
+
 footer .ContactDetails .AmVegLogo h1{
  margin-left: 10px;
 font-size: 20px;
 font-family:"Poppins";
 font-weight: 400;
-line-height: 20px;
+line-height: 10px;
+text-align: start;
 }
-footer .ContactDetails .AmVegLogo span{
-    font-size: 13px;
-    color: gray;
-}
+
 footer .ContactDetails .AmVegLogo p{
-   margin:20px 10px 10px 0px; 
+   margin-left: 10px;
+   margin-top: 10px;
    font-family:"Poppins";
-   font-size: 14px;
-   text-align: justify;
+   font-size: 15px;
+   width: 200px;
+   text-align: start;
 }
-footer .ContactDetails .company,.products,.services,.support{
-margin: 0px 10px 10px 60px;
+footer .ContactDetails .company,.products{
+margin: 0px 10px 10px 60px !important;
   font-family:"Poppins";
+  font-weight: 550;
+  text-align: start;
+}
+.followus{
+margin-left: 10px;
+text-align: start;  
+}
+.followus p{
+    margin-bottom: 13px;
+      font-family:"Poppins";
   font-weight: 550;
 }
 footer .ContactDetails ul{
@@ -191,99 +194,39 @@ footer .ContactDetails ul li{
 margin-top:7px;
 font-weight: 400;
 color: gray;
+text-align: start;
 }
 footer .ContactDetails ul li:hover{
-    color: rgb(9, 184, 9);
+    color:white;
 }
-footer .Contact{
-    display: flex;
-    flex-direction: row;
-}
-footer .Contact .contactInfo{
-    display: flex;
-}
-footer .Contact .contactInfo .contactLogo{
-    display: flex;
-    flex-direction: column;
-}
-footer .Contact .contactInfo .contactLogo i{
-    color: rgb(3, 170, 3);
-    margin-top: 10px;
-}
-footer .Contact .contactInfo .contacted p{
-   margin: 10px 15px 0px 15px; 
-}
-footer .Contact .followus p{
-  font-family:"Poppins";
-  font-weight: 550;
-}
-footer .Contact .followus>div{
- margin-top:10px;
-}
-footer .Contact .followus i{
+footer .ContactDetails .followus i{
    margin-right: 15px;
+  margin-top: 45px !important;
     background-color:#041f3b;
     padding: 7px 8px 3px 8px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
+    color: white;
 }
-footer .Contact .followus i:hover{
+footer .ContactDetails .followus i:hover{
     color:white;
-    background-color:green ;
+    background-color:var(--navColor) ;
 }
 footer .verticalLine{
 height: 1px;
 width: 100%;
 background-color:#041f3b;
-margin: 50px 10px 10px 10px;
+margin: 40px 10px 5px 10px;
 }
-footer .newsLetter{
-    display: flex;
-    flex-direction: row;
- margin-top: 40px;
-}
-footer .newsLetter h1{
-  margin-left: 10px;
-font-size: 20px;
-font-family:"Poppins";
-font-weight: 400;
-line-height: 30px;  
-font-size: 20px; 
-}
-footer .newsLetter span{
-       font-size: 15px;
-   color: gray;
-   font-family:"Poppins";
-font-weight: 300;
-letter-spacing: .5px;
-}
-footer .newsLetter input{
-background-color:#041f3b;
-margin:20px 10px 0px 70px;
-padding: 14px 90px;
-outline: none;
-border: 1px solid #041f3b ;
-border-radius: 8px;
-}
-footer .newsLetter button{
-    background-color: green;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 35px !important;
-    margin:20px 10px 0px 0px;
-    color: white;
-    font-family:"Poppins";
-    cursor: pointer;
-}
-footer .newsLetter button:hover{
-    background-color: rgb(3, 86, 3);
-}
+
+
 footer .copyright{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-     margin-top: 40px;
+     margin-top: 20px;
+     padding: 10px;
 }
 footer .copyright p{
  font-size: 15px;
@@ -303,7 +246,7 @@ footer .copyright ul li{
    font-family:"Poppins";
 }
 footer .copyright ul li:hover{
-    color: green;
+    color:white;
   
 }
 /* footer design ended */
