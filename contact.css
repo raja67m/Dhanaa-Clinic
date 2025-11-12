@@ -1,4 +1,5 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 *{
     margin: 0px;
     padding: 0px;
@@ -74,29 +75,32 @@ height:auto;
 background-color:var(--navColor);
 display: flex;
 flex-direction: column;
-padding: 20px;
+padding: 60px;
 justify-content: center;
 align-items: center;
 margin-top: 20px;
 }
 section .newsLetterContainer i{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--headingColor);
+       background-color:#cce0ff;
+        padding: 20px 20px 5px 20px;
+        border-radius: 50%;
 }
 section .newsLetterContainer .newsLetter{
     background-color: white;
     width: 85%;
-    padding: 30px;
+    padding: 70px 30px;
     border-radius: 10px;
-    text-align: start;
-    
 }
 section .newsLetterContainer .newsLetter p{
     color: black;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 550;
-    margin: 5px;
+   
 }
 section .newsLetterContainer .newsLetter span{
     color: gray;
@@ -109,6 +113,7 @@ section .newsLetterContainer .newsLetter input{
 padding: 10px 36%;
 border: 1px solid rgb(243, 239, 239);
 border-radius: 9px;
+margin-bottom: 20px; 
 background-color: rgb(243, 241, 241);
       font-size: 13px;
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -125,7 +130,178 @@ section .newsLetterContainer .newsLetter button{
     color: white;
     padding: 10px 15px;
     cursor: pointer;
+    
 }
 section .newsLetterContainer .newsLetter button:hover{
 background-color: rgb(27, 27, 206);
 }
+/* footer design stared */
+footer{
+    background-color:#000d1a;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+footer .ContactDetails{
+    display: flex;
+    flex-direction: row;
+}
+footer .ContactDetails .AmVegLogo{
+width: 40%;
+}
+footer .ContactDetails .AmVegLogo>div{
+    display:inline-flex;
+}
+footer .ContactDetails .AmVegLogo i{
+    background-color: rgb(4, 162, 4);
+    padding: 10px 14px;
+    border-radius: 7px;
+}
+footer .ContactDetails .AmVegLogo h1{
+ margin-left: 10px;
+font-size: 20px;
+font-family:"Poppins";
+font-weight: 400;
+line-height: 20px;
+}
+footer .ContactDetails .AmVegLogo span{
+    font-size: 13px;
+    color: gray;
+}
+footer .ContactDetails .AmVegLogo p{
+   margin:20px 10px 10px 0px; 
+   font-family:"Poppins";
+   font-size: 14px;
+   text-align: justify;
+}
+footer .ContactDetails .company,.products,.services,.support{
+margin: 0px 10px 10px 60px;
+  font-family:"Poppins";
+  font-weight: 550;
+}
+footer .ContactDetails ul{
+list-style-type: none;
+margin-top: 10px;
+cursor: pointer;
+}
+footer .ContactDetails ul li{
+margin-top:7px;
+font-weight: 400;
+color: gray;
+}
+footer .ContactDetails ul li:hover{
+    color: rgb(9, 184, 9);
+}
+footer .Contact{
+    display: flex;
+    flex-direction: row;
+}
+footer .Contact .contactInfo{
+    display: flex;
+}
+footer .Contact .contactInfo .contactLogo{
+    display: flex;
+    flex-direction: column;
+}
+footer .Contact .contactInfo .contactLogo i{
+    color: rgb(3, 170, 3);
+    margin-top: 10px;
+}
+footer .Contact .contactInfo .contacted p{
+   margin: 10px 15px 0px 15px; 
+}
+footer .Contact .followus p{
+  font-family:"Poppins";
+  font-weight: 550;
+}
+footer .Contact .followus>div{
+ margin-top:10px;
+}
+footer .Contact .followus i{
+   margin-right: 15px;
+    background-color:#041f3b;
+    padding: 7px 8px 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+footer .Contact .followus i:hover{
+    color:white;
+    background-color:green ;
+}
+footer .verticalLine{
+height: 1px;
+width: 100%;
+background-color:#041f3b;
+margin: 50px 10px 10px 10px;
+}
+footer .newsLetter{
+    display: flex;
+    flex-direction: row;
+ margin-top: 40px;
+}
+footer .newsLetter h1{
+  margin-left: 10px;
+font-size: 20px;
+font-family:"Poppins";
+font-weight: 400;
+line-height: 30px;  
+font-size: 20px; 
+}
+footer .newsLetter span{
+       font-size: 15px;
+   color: gray;
+   font-family:"Poppins";
+font-weight: 300;
+letter-spacing: .5px;
+}
+footer .newsLetter input{
+background-color:#041f3b;
+margin:20px 10px 0px 70px;
+padding: 14px 90px;
+outline: none;
+border: 1px solid #041f3b ;
+border-radius: 8px;
+}
+footer .newsLetter button{
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 35px !important;
+    margin:20px 10px 0px 0px;
+    color: white;
+    font-family:"Poppins";
+    cursor: pointer;
+}
+footer .newsLetter button:hover{
+    background-color: rgb(3, 86, 3);
+}
+footer .copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     margin-top: 40px;
+}
+footer .copyright p{
+ font-size: 15px;
+   color: gray;
+   font-family:"Poppins";
+   font-weight: 300;   
+}
+footer .copyright ul{
+    display:inline-flex;
+    list-style-type: none;
+}
+footer .copyright ul li{
+    margin-right: 24px;
+    cursor: pointer;
+      font-size: 15px;
+       color: gray;
+   font-family:"Poppins";
+}
+footer .copyright ul li:hover{
+    color: green;
+  
+}
+/* footer design ended */
