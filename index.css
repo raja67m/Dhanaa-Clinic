@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 :root{
 --headingColor:#1a75ff;  
 --navColor:#1a75ff;
@@ -160,4 +161,47 @@ height:auto;
 /* slider container  star*/
 .bodyContainer .slider{
   margin-top: 120px;
+}
+.fi-br-menu-burger{
+  font-size: 25px;
+  display: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.fi-br-cross{
+   font-size: 25px;
+  display: none;
+   margin-top: 20px;
+    cursor: pointer;
+}
+/* moblie based responsive design */
+@media screen and (max-width:767px)and (max-width:960px){
+.fi-br-menu-burger{
+display:block;
+}
+.fi-br-cross{
+  margin-left:15%; 
+  
+}
+.header nav ul {
+    display: none;
+    flex-direction: column;
+
+               -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+.header nav ul li{
+  margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+}
+.header nav button{
+  display: none;
+}
+.header{
+  justify-content: space-around;
+}
 }

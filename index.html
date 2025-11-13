@@ -17,8 +17,8 @@
          
          
          <!-- logo end -->
-    <nav>
-             <ul class="topNav" >
+    <nav >
+             <ul id="topNav" >
                         <li> <a  href="./services.html" >Service</a></li>
                         <li> <a href="./doctors.html" >Docters</a></li>
                         <li> <a href="./bookAppointments.html" >Book Appointments</a></li>
@@ -29,7 +29,7 @@
 
               <button onclick="bookAppointment()">Get started</button>
               <i class="fi fi-br-menu-burger" onclick="resNavBar()"></i>
-              <i class="fi fi-bs-cross" id="close" onclick="closeNavBar()"></i>
+              <i class="fi fi-br-cross" onclick="closeNavBar()"></i>
                <!-- serachbar & add cart & inqure section end -->
             
     </nav>
@@ -73,14 +73,8 @@
                             </div>
                     </div>
      </section>
-<script>
-  
-bookAppointment=()=>{
-   window.location="./bookAppointments.html";
-}  
-servicePage=()=>{
-    window.location="./services.html";
-}
-</script>
+    
+<script src="./resNav.js"></script>     
+
 </body>
 </html>
