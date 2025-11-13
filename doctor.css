@@ -86,3 +86,16 @@ section .doctorContainer .doctorGrid .catgoroy p{
   font-weight: 500;
   border-radius: 9px;
 }
+
+
+/* mobile based responsive design  */
+@media screen and (max-width:767px)and (max-width:960px){
+section .doctorContainer .doctorGrid{
+grid-template-columns:repeat(1,1fr);
+padding-left: 30px;
+padding-right: 30px;
+  margin: 5px;
+  gap: 1px;
+}  
+
+}
