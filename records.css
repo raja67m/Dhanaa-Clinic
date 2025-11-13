@@ -285,3 +285,25 @@ margin: 25px 16px 25px 25px;
 .feedBack:hover{
 background-color: rgb(27, 27, 206);
 } 
+/* mobile based responsive design  */
+@media screen and (max-width:767px)and (max-width:960px){
+ section .recordSearch .searchBarContainer input{
+padding: 15px 25%;
+margin: 5px;
+}  
+section .recordSearch .searchBarContainer button{
+margin-left: 100px;
+}
+.healthContainer .healthGrid{
+   display: grid;
+  grid-template-columns:repeat(1,1fr);
+}
+section .PatientRecordContainer .feedback .field{
+display: flex;
+flex-direction:column;
+}
+section .PatientRecordContainer .feedback .service{
+display: flex;
+flex-direction: column;
+}
+}
