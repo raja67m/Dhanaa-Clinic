@@ -133,3 +133,23 @@ font-weight: 550;
 }
 
 /* book appointment is closed */
+
+/* mobile based responsive design  */
+@media screen and (max-width:767px)and (max-width:960px){
+.appointmentForm .messageCon{
+    display: flex;
+    flex-direction: column;
+}
+.appointmentForm input{
+  padding: 30px 23%;
+}
+.appointmentForm select{
+  padding: 13px 25%;
+}
+.appointmentForm #time{
+font-weight: 550;
+    font-size: 13px;
+    margin-top: 30px;
+   margin-right: 73%;
+}
+}
