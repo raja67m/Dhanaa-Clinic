@@ -204,4 +204,9 @@ display:block;
 .header{
   justify-content: space-around;
 }
+.bodyContainer{
+  display: flex;
+  flex-direction:column;
+  padding-top: 60px;
+}
 }
