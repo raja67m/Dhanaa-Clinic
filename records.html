@@ -46,7 +46,7 @@
             <p>Search Patient Records</p>
             <span>Enter your patient ID to access your medical records</span>
             <div class="searchBarContainer">
-                <input type="text" placeholder="Enter Patient ID (e.g., PT001)" required>
+                <input type="text"  placeholder="Enter Patient ID (e.g., PT001)" required>
                 <button type="submit">Search</button>
             </div>
          </div>
@@ -134,11 +134,11 @@
                        <div class="field">
                         <div>
                            <label>Full Name*</label>
-                            <input type="text" name="fullname" required>
+                            <input type="text" name="fullname" id="fullName" >
                         </div>
                            <div>
                                <label>Email*</label>
-                               <input type="email" name="email" required>
+                               <input type="email" name="email" id="emailID" >
                            </div>
                             
                           </div>
@@ -165,5 +165,6 @@
     </div>
  </section>
 <script src="./resNav.js"></script>   
+<script src="formValidation.js"></script>
 </body>
 </html>
