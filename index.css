@@ -160,8 +160,54 @@ height:auto;
 
 /* slider container  star*/
 .bodyContainer .slider{
-  margin-top: 120px;
+position: relative;
+ overflow: hidden;
+ margin-top: 160px;
+ margin-left: 50px;
+ margin-right: 50px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  height: 400px;
 }
+.bodyContainer .slider .slide{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ object-fit: cover;
+ transition: opacity 0.7s ease-in-out;
+ opacity: 0;
+ top: 0;
+ left: 0;
+}
+.slider .slideActive{
+  opacity: 1;
+}
+.bodyContainer .slider .navgation{
+  position:absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  height: auto;
+  left: 0;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  z-index: 10;
+}
+.bodyContainer .slider .navgation button{
+ background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+border-radius: 50%;
+  padding: 10px 13px;
+  cursor: pointer;
+   transition: background 0.3s;
+}
+.bodyContainer .slider .navgation button:hover{
+   background: rgba(0, 0, 0, 0.8);
+}
+
 .fi-br-menu-burger{
   font-size: 25px;
   display: none;

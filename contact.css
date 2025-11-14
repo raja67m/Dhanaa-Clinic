@@ -250,3 +250,36 @@ footer .copyright ul li:hover{
   
 }
 /* footer design ended */
+
+@media screen and (max-width:767px)and (max-width:960px){
+section .contactContainer .contactGrid{
+grid-template-columns:repeat(1,1fr);
+}
+section .newsLetterContainer .newsLetter{
+width: 75%;
+padding: 40px 20px;
+}
+section .newsLetterContainer .newsLetter input{
+padding: 10px 26%;
+}
+footer .ContactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.followus{
+text-align: center;  
+}
+footer .copyright{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+     padding: 10px;
+     justify-content: center;
+     align-items: center;
+}
+footer .copyright p{
+margin-bottom: 10px;
+}
+} 
