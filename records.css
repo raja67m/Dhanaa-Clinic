@@ -92,7 +92,8 @@ section .recordTableContainer{
   border: 1px solid var(--borderGray);
   border-radius: 9px;
   text-align: start;
-   margin-bottom: 50px;  
+   margin-bottom: 50px; 
+     overflow-x: auto; 
 }
 section .recordTableContainer p{
    color: black;
@@ -108,9 +109,10 @@ font-family:"Poppins";
 letter-spacing: 1px;  
 }
 section .recordTableContainer table{
-width:max-content;
+width:100%;
    border-collapse: collapse;
    margin-top: 20px;
+ 
   
 }
 
@@ -325,4 +327,29 @@ margin:5px;
 .feedBack{
   padding: 13px 30%; 
 }
+table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+   td {
+    border: none;
+    position: relative;
+    padding-left: 50%; /* Adjust as needed for labels */
+    text-align: right;
+  }
+   td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
 }
