@@ -306,4 +306,23 @@ section .PatientRecordContainer .feedback .service{
 display: flex;
 flex-direction: column;
 }
+section .PatientRecordContainer #type{
+ margin-right: 70%; 
+}
+section .PatientRecordContainer .feedback .rating{
+margin-right: 55%;
+}
+section .PatientRecordContainer .feedback .service{
+display: flex;
+flex-direction: column;
+}
+section .PatientRecordContainer .feedback .service input{
+margin:5px;
+}
+#feedFeild{
+  padding: 30px 25%; 
+}
+.feedBack{
+  padding: 13px 30%; 
+}
 }
