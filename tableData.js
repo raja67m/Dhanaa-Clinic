@@ -4,3 +4,62 @@ const tabledata={
 3:["PT003", "Mike Johnson", "2024-10-15", "Dr. Anil Verma","Child Vaccination","Compeleted"],
 }
      
+// store the table data
+const tableDataEleme=document.querySelector(".append_data");
+// bulid the table
+function bulidTable(matchingID){
+// reset table data
+tableDataEleme.innerHTML="";
+
+if(typeof matchingID === "undefined"){
+    let ind=0;
+    let tableInd=1;
+    while(ind<Object.keys(tabledata).length){
+        tableDataEleme.innerHTML += `
+                       <tr>
+                            <td data-label="Patient ID">${tableInd}</td>
+                              <td data-label="Patient Name">${tabledata[tableInd][0]}</td>
+                              <td data-label="Date">${tabledata[tableInd][1]}</td>
+                              <td data-label="Doctor">${tabledata[tableInd][2]}</td>
+                              <td data-label="Diagnosis">${tabledata[tableInd][3]}</td>
+                              <td data-label="Status"><p>${tabledata[tableInd][4]}</p></td>
+                           </tr>
+        `
+        ind++;
+        tableInd++;
+}
+}
+else{
+        tableDataEleme.innerHTML+=`
+            <tr>
+                <td colspan="5">
+                    NO DATA FOUND
+                </td>
+            </tr>
+        `;
+}
+
+}
+bulidTable();
+
+// input search function
+document.querySelector(".input-data").addEventListener('input',function(){
+        let value = this.value.trim();
+        if(value){
+            matchingIDs=[];
+            let ind=1;
+            while(ind<Object.keys(tabledata).length){
+                 if(tabledata[ind][0].includes(value) || 
+                tabledata[ind][1].includes(value) ||
+                 tabledata[ind][2].includes(value) ||
+                  tabledata[ind][3].includes(value) ||
+               tabledata[ind][3].includes(value) ){
+                      matchingIDs.push(ind);
+                  }
+                  ind++;
+                }
+                bulidTable(matchingIDs);
+        }else{
+              bulidTable();
+        }
+})
