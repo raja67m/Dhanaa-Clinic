@@ -29,6 +29,29 @@ if(typeof matchingID === "undefined"){
         tableInd++;
 }
 }
+else if(matchingID.length !== 0){ //check if matchingIDs array is not empty
+        //our loop index
+        let ind = 0;
+        //our table index
+        let tableInd = 1;
+        //loop through matching IDs provided
+        while(ind < matchingIDs.length){
+            //append data by getting ID of the record and using a template literal
+            tableDataEleme.innerHTML+=`
+                <tr>
+                    <td>${tableInd}</td>
+                    <td>${tabledata[matchingID[ind]][0]}</td>
+                    <td>${tabledata[matchingID[ind]][1]}</td>
+                    <td>${tabledata[matchingID[ind]][2]}</td>
+                    <td>${tabledata[matchingID[ind]][3]}</td>
+                       <td>${tabledata[matchingID[ind]][4]}</td>
+                </tr>
+            `;
+            //increment loop index
+            ind++;
+            //increment table index
+            tableInd++;
+        }}
 else{
         tableDataEleme.innerHTML+=`
             <tr>
